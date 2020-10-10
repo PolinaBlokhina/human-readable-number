@@ -17,7 +17,7 @@ module.exports = function toReadable (number) {
             k += 'thirty '
         }
         else if (n1 == 4) {
-            k += 'fourty '
+            k += 'forty '
         }
         else if (n1 == 5) {
             k += 'fifty '
