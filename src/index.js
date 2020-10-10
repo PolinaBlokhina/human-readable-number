@@ -11,28 +11,28 @@ module.exports = function toReadable (number) {
         n = n % 100;
         n1 = Math.floor(n/10);
         if (n1 == 2) {
-            k += 'twenty '
+            k += 'twenty'
         }
         else if (n1 == 3) {
-            k += 'thirty '
+            k += 'thirty'
         }
         else if (n1 == 4) {
-            k += 'forty '
+            k += 'forty'
         }
         else if (n1 == 5) {
-            k += 'fifty '
+            k += 'fifty'
         }
         else if (n1 == 6) {
-            k += 'sixty '
+            k += 'sixty'
         }
         else if (n1 == 7) {
-            k += 'seventy '
+            k += 'seventy'
         }
         else if (n1 == 8) {
-            k += 'eighty '
+            k += 'eighty'
         }
         else if (n1 == 9) {
-            k += 'ninety '
+            k += 'ninety'
         }
         if (n1 == 1){
             if (n == 10) {
@@ -58,6 +58,9 @@ module.exports = function toReadable (number) {
             }
         }
         else {
+            if (n1 > 0) {
+                k+= ' '
+            }
             n = n % 10;
             if (n == 1) {
                 k += 'one'
