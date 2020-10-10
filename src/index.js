@@ -6,7 +6,10 @@ module.exports = function toReadable (number) {
         var n = number;
         var k = ""
         if (Math.floor(number/100) > 0) {
-            k = k + toReadable(Math.floor(number/100)) + ' hundred ';
+            k = k + toReadable(Math.floor(number/100)) + ' hundred';
+            if (n % 100 > 0) {
+                k += ' '
+            }
         }
         n = n % 100;
         n1 = Math.floor(n/10);
