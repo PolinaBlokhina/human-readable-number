@@ -2,6 +2,9 @@ module.exports = function toReadable (number) {
     if(number == 0) {
         return "zero"
     }
+    else if (n >= 100) {
+        return "zero"
+    }
     else {
         var n = number;
         var k = ""
