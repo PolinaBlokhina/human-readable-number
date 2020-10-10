@@ -2,9 +2,6 @@ module.exports = function toReadable (number) {
     if(number == 0) {
         return "zero"
     }
-    else if (number >= 100) {
-        return "zero"
-    }
     else {
         var n = number;
         var k = ""
@@ -61,7 +58,8 @@ module.exports = function toReadable (number) {
             }
         }
         else {
-            if (n1 > 0) {
+            n = n % 10;
+            if ((n1 > 0)&&(n > 0)) {
                 k+= ' '
             }
             n = n % 10;
