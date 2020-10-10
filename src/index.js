@@ -2,7 +2,7 @@ module.exports = function toReadable (number) {
     if(number == 0) {
         return "zero"
     }
-    else if (n >= 100) {
+    else if (number >= 100) {
         return "zero"
     }
     else {
